@@ -1,0 +1,111 @@
+.income-page {
+  min-height: 100vh;
+  flex: 1;
+  background: radial-gradient(circle at top left, rgba(6, 6, 6, 0.973) 0%, rgba(0,0,0,1) 70%);
+  color: #e9ffee;
+  font-family: "Poppins", sans-serif;
+  padding: 30px 40px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #00ff99;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  background: rgba(30, 40, 35, 0.9);
+  border: 1px solid rgba(0, 255, 153, 0.3);
+  color: white;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.filter-bar input:focus,
+.filter-bar select:focus {
+  outline: none;
+  box-shadow: 0 0 8px #00ff99;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chart-container {
+  background: rgba(15, 25, 20, 0.7);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 0 auto 30px;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 255, 153, 0.05);
+}
+
+.income-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.income-card {
+  background: rgba(20, 30, 25, 0.9);
+  border: 1px solid rgba(0, 255, 153, 0.2);
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+
+.income-card:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 153, 0.2);
+  transform: translateY(-3px);
+}
+
+.icon {
+  color: #00ff99;
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+
+
+.details h3 {
+  margin: 0;
+  color: #b0c2b0;  /* ↓ much softer, muted green-gray */
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.details h3:hover {
+  color: #c9e6c9;  /* subtle highlight on hover */
+}
+
+
+.details p {
+  font-size: 0.85rem;
+  color: #00ff99;
+  margin: 2px 0 0;
+}
+
+.amount {
+  color: #00ff99;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
